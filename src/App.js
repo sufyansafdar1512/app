@@ -2,15 +2,14 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import TextForms from './components/TextForms'
-// import About from './components/About'
+import About from './components/About'
 import Alert from "./components/Alert";
-// import About from "./components/About";
 import React, { useState } from 'react';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 
 function App() {
@@ -61,21 +60,22 @@ function App() {
   }
   return (
     <>
-   {/* <Router> */}
-    <Navbar mode={mode} toggleMode={toggleMode} />
+   <Router>
+    <Navbar mode={mode} toggleMode={toggleMode} /> 
     <Alert alert={alert}/>
-    <TextForms showAlert={showAlert} heading = 'Enter the text to uppercase' mode={mode}/>
-    <div className="container my-3">
-    {/* <Routes> */}
+    {/* <TextForms showAlert={showAlert} heading = 'Enter the text to uppercase' mode={mode}/> */}
+    <div className="container my-3"> 
+    <Routes>
       {/*      / users --> components - 1
                /  users/home --> components -1 */}
-       {/* <Route exact path='/about/' element={<About/>}>
+       <Route path="/about" element={<About mode={mode}/>}>
+       {/* <About/> */}
        </Route>
-       <Route exact path='/' element={<TextForms showAlert={showAlert} heading = 'Enter the text to uppercase' mode={mode}/>}>
+       <Route exact path='/' element={<TextForms showAlert={showAlert} heading = 'Try TextUtils - Word Counter, Character Counter, Remove extra spaces' mode={mode}/>}>
         </Route>
-    </Routes> */}
+    </Routes>
     </div>
-    {/* </Router>     */}
+    </Router>    
     </>
   );
 }
