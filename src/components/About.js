@@ -24,7 +24,7 @@ export default function About(props) {
         </h2>
         <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
         <div className="accordion-body" style={myStyle}>
-          TextUtils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or 
+          TextStyler gives you a way to analyze your text quickly and efficiently. Be it word count, character count or 
         </div>
         </div>
     </div>
@@ -36,8 +36,8 @@ export default function About(props) {
         </h2>
         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div className="accordion-body" style={myStyle}>
-            TextUtils is a free character counter tool that provide instant character count & word count statistics for a given text.
-            TextUtils reports the number of words and characters. Thus it is suitable for writing text with word character limits. 
+            TextStyler is a free character counter tool that provide instant character count & word count statistics for a given text.
+           TextStyler reports the number of words and characters. Thus it is suitable for writing text with word character limits. 
         </div>
         </div>
     </div>
