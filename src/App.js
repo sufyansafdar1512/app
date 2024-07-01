@@ -44,18 +44,18 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
       showAlert("Dark mode has been enabled","success");
-      // document.title = 'TextUtils - Dark Mode';
+      // document.title = 'TextStyler - Dark Mode';
       // setInterval(() => {
-      // document.title = 'TextUtils - Dark Mode';  
+      // document.title = 'TextStyler - Dark Mode';  
       // }, 2000);
       // setInterval(() => {
-      //   document.title = 'Install TextUtils Now ..!';  
+      //   document.title = 'Install TextStyler Now ..!';  
       //   }, 1200);
     }else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled","success");
-      // document.title = 'TextUtils - Light Mode';
+     
     }
   }
   return (
@@ -71,7 +71,7 @@ function App() {
        <Route path="/about" element={<About mode={mode}/>}>
        {/* <About/> */}
        </Route>
-       <Route exact path='/' element={<TextForms showAlert={showAlert} heading = 'Try TextUtils - Word Counter, Character Counter, Remove extra spaces' mode={mode}/>}>
+       <Route exact path='/' element={<TextForms showAlert={showAlert} heading = 'Try TextStyler - Word Counter, Character Counter, Remove extra spaces' mode={mode}/>}>
         </Route>
     </Routes>
     </div>
